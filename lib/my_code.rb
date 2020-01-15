@@ -12,8 +12,12 @@ def map(array)
 end
 
 
-def reduce(array, result = 0)
+def reduce(array, starting_value = nil)
   counter = 0 
+  
+  if starting_value
+    else
+  end
   
   while counter < array.length do
     if array[counter] == true
