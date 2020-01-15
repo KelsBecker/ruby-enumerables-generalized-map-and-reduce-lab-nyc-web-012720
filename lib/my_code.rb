@@ -16,23 +16,15 @@ def reduce(array, starting_value = nil)
   counter = 0 
   
   if starting_value
+    i = 0 
     result = starting_value
-    first_elemnt = array[counter + 1] 
-   else
-     
-    
-     
-      
+  else
+    result = array[counter]
+    i = 1 
   end
-  
+     
   while counter < array.length do
-    if array[counter] == true
-      result = true
-    elsif array[counter] == false
-      result = false
-    else
-      result = yield(result, array[counter]) 
-    end 
+    result = yield(result, array[counter + i]) 
     counter += 1
   end
   result
