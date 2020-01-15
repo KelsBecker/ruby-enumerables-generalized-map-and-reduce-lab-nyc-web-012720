@@ -14,9 +14,14 @@ end
 
 def reduce(array, starting_value = nil)
   counter = 0 
+  result = nil
+  first_element = array[counter]
   
   if starting_value
-    else
+    result = starting_value
+   else
+     
+      
   end
   
   while counter < array.length do
