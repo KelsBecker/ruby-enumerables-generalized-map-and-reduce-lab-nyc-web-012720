@@ -18,7 +18,7 @@ def reduce(array, starting_value = nil)
     i = 0 
     result = starting_value
   else
-    result = array[i]
+    result = array[0]
     i = 1 
   end
      
