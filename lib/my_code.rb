@@ -14,12 +14,13 @@ end
 
 def reduce(array, starting_value = nil)
   counter = 0 
-  result = nil
-  first_element = array[counter]
   
   if starting_value
     result = starting_value
+    first_elemnt = array[counter + 1] 
    else
+     
+    
      
       
   end
