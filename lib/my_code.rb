@@ -13,8 +13,7 @@ end
 
 
 def reduce(array, starting_value = nil)
-  counter = 0 
-  
+
   if starting_value
     i = 0 
     result = starting_value
@@ -23,9 +22,9 @@ def reduce(array, starting_value = nil)
     i = 1 
   end
      
-  while counter < array.length do
-    result = yield(result, array[counter + i]) 
-    counter += 1
+  while i < array.length do
+    result = yield(result, array[i]) 
+    i += 1
   end
   result
 end
